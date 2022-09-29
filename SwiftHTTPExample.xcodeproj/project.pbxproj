@@ -14,6 +14,7 @@
 		3FF89C8028E53B4000AD2B69 /* SwiftHTTPExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C7F28E53B4000AD2B69 /* SwiftHTTPExampleTests.swift */; };
 		3FF89C8A28E53B4000AD2B69 /* SwiftHTTPExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C8928E53B4000AD2B69 /* SwiftHTTPExampleUITests.swift */; };
 		3FF89C8C28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C8B28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift */; };
+		3FF89C9A28E53DAC00AD2B69 /* SwiftHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF89C9928E53DAC00AD2B69 /* SwiftHTTP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FF89C9A28E53DAC00AD2B69 /* SwiftHTTP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = SwiftHTTPExample;
+			packageProductDependencies = (
+				3FF89C9928E53DAC00AD2B69 /* SwiftHTTP */,
+			);
 			productName = SwiftHTTPExample;
 			productReference = 3FF89C6B28E53B3F00AD2B69 /* SwiftHTTPExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 3FF89C6228E53B3F00AD2B69;
+			packageReferences = (
+				3FF89C9828E53DAC00AD2B69 /* XCRemoteSwiftPackageReference "SwiftHTTP" */,
+			);
 			productRefGroup = 3FF89C6C28E53B3F00AD2B69 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FF89C9828E53DAC00AD2B69 /* XCRemoteSwiftPackageReference "SwiftHTTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dylanjrafferty/SwiftHTTP.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FF89C9928E53DAC00AD2B69 /* SwiftHTTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FF89C9828E53DAC00AD2B69 /* XCRemoteSwiftPackageReference "SwiftHTTP" */;
+			productName = SwiftHTTP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FF89C6328E53B3F00AD2B69 /* Project object */;
 }

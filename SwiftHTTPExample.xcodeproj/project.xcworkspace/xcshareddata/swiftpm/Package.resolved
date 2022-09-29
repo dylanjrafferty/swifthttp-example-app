@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swifthttp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dylanjrafferty/SwiftHTTP.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9235ad3fcf0b4ae28f152de19a33fb240075b14b"
+      }
+    }
+  ],
+  "version" : 2
+}
