@@ -15,6 +15,9 @@
 		3FF89C8A28E53B4000AD2B69 /* SwiftHTTPExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C8928E53B4000AD2B69 /* SwiftHTTPExampleUITests.swift */; };
 		3FF89C8C28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C8B28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift */; };
 		3FF89C9A28E53DAC00AD2B69 /* SwiftHTTP in Frameworks */ = {isa = PBXBuildFile; productRef = 3FF89C9928E53DAC00AD2B69 /* SwiftHTTP */; };
+		3FF89C9D28E89BD200AD2B69 /* Wine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89C9C28E89BD200AD2B69 /* Wine.swift */; };
+		3FF89CA228E89DB500AD2B69 /* NetworkingValues+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89CA128E89DB500AD2B69 /* NetworkingValues+Exts.swift */; };
+		3FF89CA428E8A0AC00AD2B69 /* WineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF89CA328E8A0AC00AD2B69 /* WineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		3FF89C8528E53B4000AD2B69 /* SwiftHTTPExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftHTTPExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF89C8928E53B4000AD2B69 /* SwiftHTTPExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHTTPExampleUITests.swift; sourceTree = "<group>"; };
 		3FF89C8B28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHTTPExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FF89C9C28E89BD200AD2B69 /* Wine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wine.swift; sourceTree = "<group>"; };
+		3FF89CA128E89DB500AD2B69 /* NetworkingValues+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingValues+Exts.swift"; sourceTree = "<group>"; };
+		3FF89CA328E8A0AC00AD2B69 /* WineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,10 @@
 		3FF89C6D28E53B3F00AD2B69 /* SwiftHTTPExample */ = {
 			isa = PBXGroup;
 			children = (
+				3FF89CA628E8A24200AD2B69 /* View */,
+				3FF89CA528E8A23300AD2B69 /* NetworkingExtensions */,
+				3FF89C9B28E89BC900AD2B69 /* Model */,
 				3FF89C6E28E53B3F00AD2B69 /* SwiftHTTPExampleApp.swift */,
-				3FF89C7028E53B3F00AD2B69 /* ContentView.swift */,
 				3FF89C7228E53B4000AD2B69 /* Assets.xcassets */,
 				3FF89C7428E53B4000AD2B69 /* Preview Content */,
 			);
@@ -127,6 +135,31 @@
 				3FF89C8B28E53B4000AD2B69 /* SwiftHTTPExampleUITestsLaunchTests.swift */,
 			);
 			path = SwiftHTTPExampleUITests;
+			sourceTree = "<group>";
+		};
+		3FF89C9B28E89BC900AD2B69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3FF89C9C28E89BD200AD2B69 /* Wine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3FF89CA528E8A23300AD2B69 /* NetworkingExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FF89CA128E89DB500AD2B69 /* NetworkingValues+Exts.swift */,
+			);
+			path = NetworkingExtensions;
+			sourceTree = "<group>";
+		};
+		3FF89CA628E8A24200AD2B69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FF89C7028E53B3F00AD2B69 /* ContentView.swift */,
+				3FF89CA328E8A0AC00AD2B69 /* WineView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF89C7128E53B3F00AD2B69 /* ContentView.swift in Sources */,
+				3FF89CA228E89DB500AD2B69 /* NetworkingValues+Exts.swift in Sources */,
 				3FF89C6F28E53B3F00AD2B69 /* SwiftHTTPExampleApp.swift in Sources */,
+				3FF89C9D28E89BD200AD2B69 /* Wine.swift in Sources */,
+				3FF89CA428E8A0AC00AD2B69 /* WineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
