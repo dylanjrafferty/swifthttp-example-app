@@ -15,16 +15,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            Button("Refresh") {
-                Task.detached {
-                    await refreshRedWines()
+            VStack {
+                Button("Refresh") {
+                    Task.detached {
+                        await refreshRedWines()
+                    }
                 }
-            }
-            List(redWines) { wine in
-                HStack {
-                    Spacer()
-                    WineView(wine: wine)
-                    Spacer()
+                List(redWines) { wine in
+                    HStack {
+                        Spacer()
+                        WineView(wine: wine)
+                        Spacer()
+                    }
                 }
             }
         }
@@ -39,7 +41,8 @@ struct ContentView: View {
             isRefreshing = true
             guard let url = URL(string: "https://api.sampleapis.com/wines/reds") else { return }
             redWines = try await WineRequest()
-                .networkingEnvironment(\.baseURL, url)()
+                .networkingEnvironment(\.baseURL, url)
+                .execute()
             isRefreshing = false
         } catch {
             print("Failed to get data: ", error.localizedDescription)
@@ -58,6 +61,7 @@ final class WineRequest: Requestable {
         Request(url: baseURL) {
             
         }
+        .setMethod(.get)
     }
 }
 

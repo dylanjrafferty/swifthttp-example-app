@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Wine: Decodable, Identifiable {
+struct Wine: Hashable, Decodable, Identifiable {
     let winery: String
     let wine: String
     let rating: Rating
@@ -19,7 +19,7 @@ struct Wine: Decodable, Identifiable {
         URL(string: image)
     }
     
-    struct Rating: Decodable {
+    struct Rating: Hashable, Decodable {
         let average: String
         let reviews: String
     }
